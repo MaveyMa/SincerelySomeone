@@ -8,7 +8,7 @@
 	<head>
 		<title>Sincerely Someone</title>
         <!--FAVICON-->
-		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="/home/copypasta/Desktop/testEnv/images/favicon.ico">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -36,12 +36,18 @@
 				<input type="submit" value="Post it!" />
 			</form>
 
-
-						<form action="help.php" method="POST">
-			    		<input name="field1" type="text" />
-			    		<input name="field2" type="text" />
-			    		<input type="submit" name="submit" value="Save Data">
-						</form>
+			<form action="save-to-log.php" method="POST" id="textBox">
+	  <fieldset>
+	    <legend>Add to log</legend>
+	    <p>
+	      Message:
+	      <textarea name="message"></textarea>
+	    </p>
+	    <p>
+	      <input type="submit" value="SAVE" />
+	    </p>
+	  </fieldset>
+	</form>
 
 		<!-- Footer -->
 			<footer id="footer">
